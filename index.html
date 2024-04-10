@@ -16,8 +16,13 @@
 	<body>
 
 		<div class="card">
-			<!-- card image -->
-			<div class="card__image"></div>
+			<!-- card picture -->
+			<picture class="card__picture">
+				<source media="(max-width: 768px)" srcset="images/image-product-mobile.jpg" />
+				<img class="card__image desktop"
+					src="images/image-product-desktop.jpg"
+					alt="product image">
+			</picture>
 			<!-- card content -->
 			<div class="card__content">
 				<!-- card subtitle -->

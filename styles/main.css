@@ -54,12 +54,14 @@ body {
     border-radius: 0.625rem;
 }
 
-.card__image {
+.card__picture {
     width: 18.75rem;
     height: 28.125rem;
-    background-image: url('../images/image-product-desktop.jpg');
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__image {
     border-top-left-radius: 0.625rem;
     border-bottom-left-radius: 0.625rem;
 }
@@ -122,7 +124,7 @@ body {
     cursor: pointer;
 }
 
-.card__action:hover{
+.card__action:hover {
     background-color: var(--very-dark-blue);
 }
 
@@ -157,10 +159,14 @@ body {
         flex-direction: column;
     }
 
-    .card__image {
+    .card__picture {
         width: 21.438rem;
         height: 15rem;
-        background-image: url('../images/image-product-mobile.jpg');
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card__image {
         border-top-right-radius: 0.625rem;
         border-bottom-left-radius: 0;
     }

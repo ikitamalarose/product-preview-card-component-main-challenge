@@ -12,6 +12,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
   - [Author](#author)
 
 
@@ -41,6 +42,19 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+  
+ ### What I learned
+
+Use different images for different screen sizes
+
+```html
+<picture class="card__picture">
+	<source media="(max-width: 768px)" srcset="images/image-product-mobile.jpg"/>
+				<img class="card__image desktop"
+					src="images/image-product-desktop.jpg"
+					alt="product image">
+</picture>
+```
 
 ## Author
 
